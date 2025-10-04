@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600;800&display=swap");
+:root {
+	--button-color: #1f6fb0;
+	--button-shadow: #23649b;
+	--text-color: #ecedf0;
+	--background-color: #404a65;
+	--text-shadow: #35383f;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--background-color);
+	font-family: Kanit;
+	display: flex;
+	gap: 30px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.coin-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.author-info {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 16px;
+	color: rgb(55, 65, 81);
+	position: sticky;
+	bottom: 0px;
+}
+
+.author-info a {
+	text-decoration: none;
+}
+.heading {
+	/* Heading Text Shadow */
+	text-shadow: 2px 2px 0px var(--text-shadow);
+	-webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: var(--text-shadow);
+	font-size: 64px;
+	text-align: center;
+	color: var(--text-color);
+	font-weight: 800;
+}
+.subheading,
+.result {
+	font-size: 24px;
+	color: var(--text-color);
+	font-weight: 600;
+}
+
+button {
+	/* Button Shadow */
+	box-shadow: 0px 4px 0px 0px var(--button-shadow);
+	text-transform: uppercase;
+	background-color: var(--button-color);
+	color: var(--text-color);
+	font-size: 20px;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+}
+button:active {
+	transform: translateY(2px);
+	box-shadow: 0px 2px 0px 0px var(--button-shadow);
+}
+button:hover {
+	background-color: #1f6fb0e8;
+}
